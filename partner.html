@@ -6,11 +6,11 @@
   <title>Partner – Alex Gaming</title>
   <style>
     :root {
-      --bg: #0f0f0f;
-      --text: #ffffff;
-      --highlight: #00ffcc;
-      --dark: #1a1a1a;
-      --nav: #2c2c2c;
+      --bg: #0e0e0e;
+      --text: #f0f0f0;
+      --highlight: #00ffd0;
+      --nav: #1a1a1a;
+      --section: #141414;
     }
 
     * {
@@ -20,15 +20,27 @@
     }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: var(--bg);
+      font-family: "Segoe UI", sans-serif;
+      background-color: var(--bg);
       color: var(--text);
+      line-height: 1.6;
     }
 
-    header, footer {
-      background: var(--dark);
-      padding: 20px;
+    header {
+      background-color: var(--nav);
+      padding: 40px 20px;
       text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: var(--highlight);
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #ccc;
+      font-size: 1.1em;
     }
 
     .navbar {
@@ -42,20 +54,20 @@
 
     .logo {
       font-size: 1.5em;
-      color: var(--highlight);
       font-weight: bold;
+      color: var(--highlight);
     }
 
     .menu {
       display: flex;
-      flex-wrap: wrap;
       gap: 15px;
+      flex-wrap: wrap;
     }
 
     .menu a {
       text-decoration: none;
       color: var(--text);
-      font-weight: 600;
+      font-weight: 500;
     }
 
     .menu a:hover {
@@ -91,51 +103,49 @@
     }
 
     main {
+      padding: 40px 20px;
       max-width: 1200px;
       margin: auto;
-      padding: 40px 20px;
     }
 
-    h1 {
-      font-size: 2.4em;
+    section {
+      margin-bottom: 40px;
+      background-color: var(--section);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    section h2 {
       color: var(--highlight);
-    }
-
-    h2 {
-      font-size: 1.6em;
-      margin-top: 30px;
-      color: var(--highlight);
-    }
-
-    p {
-      color: #ccc;
-      font-size: 1.1em;
-      line-height: 1.6;
+      margin-bottom: 15px;
     }
 
     ul {
       list-style: none;
-      padding: 0;
+      padding-left: 0;
     }
 
-    ul li {
-      background: #1a1a1a;
-      margin: 10px 0;
+    li {
+      background: #1f1f1f;
       padding: 10px 15px;
-      border-left: 5px solid var(--highlight);
+      margin-bottom: 10px;
+      border-left: 4px solid var(--highlight);
+      border-radius: 4px;
+    }
+
+    footer {
+      background-color: var(--nav);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Unsere Partner</h1>
-    <p>Gemeinsam mehr erreichen – weltweit</p>
-  </header>
-
   <nav class="navbar">
     <div class="logo">Alex Gaming</div>
-    <input type="checkbox" id="toggle2" class="toggle" />
-    <label for="toggle2" class="hamburger">&#9776;</label>
+    <input type="checkbox" id="toggle1" class="toggle" />
+    <label for="toggle1" class="hamburger">&#9776;</label>
     <div class="menu">
       <a href="index.html">Start</a>
       <a href="ueber.html">Über Uns</a>
@@ -147,18 +157,25 @@
     </div>
   </nav>
 
+  <header>
+    <h1>Unsere Partner</h1>
+    <p>Gemeinsam stark durch strategische Kooperationen</p>
+  </header>
+
   <main>
-    <p>Unsere Partner sind Teil unserer Mission. Sie bringen neue Impulse, Sichtbarkeit und Stärke in unsere Community.</p>
+    <section>
+      <h2>Aktive Partnerschaften</h2>
+      <ul>
+        <li><strong>Ayve Song Production</strong> – Musik, Beats & Audio Branding</li>
+        <li><strong>Studio NextStep</strong> – Design, Markenidentität, Digital Branding</li>
+        <li><strong>Global Connect Media</strong> – Reichweite & mediale Verbreitung</li>
+      </ul>
+    </section>
 
-    <h2>Aktuelle Partner</h2>
-    <ul>
-      <li><strong>Ayve Song Production</strong> – Kreative Musiklösungen</li>
-      <li><strong>Studio NextStep</strong> – Branding und Design</li>
-      <li><strong>Global Connect Media</strong> – Internationale Verbreitung</li>
-    </ul>
-
-    <h2>Partner werden?</h2>
-    <p>Du willst mit uns kooperieren? Dann melde dich direkt bei uns via <a href="mailto:team.alexgaming@icloud.com" style="color: var(--highlight);">E-Mail</a> oder über unsere Community.</p>
+    <section>
+      <h2>Werde unser Partner</h2>
+      <p>Du möchtest mit uns zusammenarbeiten und Teil eines internationalen Netzwerks werden? Schreibe uns unter <a href="mailto:team.alexgaming@icloud.com" style="color: var(--highlight);">team.alexgaming@icloud.com</a> – wir freuen uns auf dich!</p>
+    </section>
   </main>
 
   <footer>&copy; 2025 Alex Gaming</footer>
