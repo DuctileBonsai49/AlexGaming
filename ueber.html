@@ -13,8 +13,17 @@
       --nav: #2c2c2c;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
 
     header, footer {
       background: var(--dark);
@@ -22,23 +31,63 @@
       text-align: center;
     }
 
-    nav {
-      background: var(--nav);
+    .navbar {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--nav);
+      padding: 10px 20px;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 15px;
     }
 
-    nav a {
-      color: var(--text);
+    .logo {
+      font-size: 1.5em;
+      color: var(--highlight);
+      font-weight: bold;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .menu a {
       text-decoration: none;
+      color: var(--text);
       font-weight: 600;
     }
 
-    nav a:hover {
+    .menu a:hover {
       color: var(--highlight);
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 2em;
+      cursor: pointer;
+      color: var(--highlight);
+    }
+
+    .toggle {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10px;
+      }
+
+      .toggle:checked ~ .menu {
+        display: flex;
+      }
     }
 
     main {
@@ -64,12 +113,6 @@
       font-size: 1.1em;
       line-height: 1.6;
     }
-
-    @media (max-width: 768px) {
-      nav { flex-direction: column; align-items: center; }
-      h1 { font-size: 2em; }
-      h2 { font-size: 1.4em; }
-    }
   </style>
 </head>
 <body>
@@ -78,14 +121,19 @@
     <p>Die Idee. Das Team. Die Mission.</p>
   </header>
 
-  <nav>
-    <a href="index.html">Start</a>
-    <a href="ueber.html">Über Uns</a>
-    <a href="partner.html">Partner</a>
-    <a href="discord.html">Community</a>
-    <a href="agb.html">AGB</a>
-    <a href="datenschutz.html">Datenschutz</a>
-    <a href="impressum.html">Impressum</a>
+  <nav class="navbar">
+    <div class="logo">Alex Gaming</div>
+    <input type="checkbox" id="toggle1" class="toggle" />
+    <label for="toggle1" class="hamburger">&#9776;</label>
+    <div class="menu">
+      <a href="index.html">Start</a>
+      <a href="ueber.html">Über Uns</a>
+      <a href="partner.html">Partner</a>
+      <a href="discord.html">Community</a>
+      <a href="agb.html">AGB</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+    </div>
   </nav>
 
   <main>
