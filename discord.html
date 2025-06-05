@@ -1,57 +1,105 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Community – Alex Gaming</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #0f0f0f; color: #fff; }
-    header, footer { background: #1a1a1a; text-align: center; padding: 20px; }
-    nav { background: #2c2c2c; display: flex; justify-content: center; gap: 20px; padding: 15px; }
-    nav a { color: #fff; text-decoration: none; font-weight: bold; }
-    nav a:hover { color: #00ffcc; }
-    section { padding: 50px 20px; max-width: 1000px; margin: auto; text-align: center; }
-    h1, h2 { color: #00ffcc; }
-    .discord-btn {
-      display: inline-block;
-      background: #5865F2;
-      color: #fff;
-      padding: 14px 28px;
-      border-radius: 8px;
-      font-size: 1.1em;
+    :root {
+      --bg: #0f0f0f;
+      --text: #ffffff;
+      --highlight: #00ffcc;
+      --dark: #1a1a1a;
+      --nav: #2c2c2c;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); }
+
+    header, footer {
+      background: var(--dark);
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: var(--nav);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+    }
+
+    nav a {
+      color: var(--text);
       text-decoration: none;
-      margin-top: 25px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--highlight);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.4em;
+      color: var(--highlight);
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #ccc;
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+
+    .discord-button {
+      background: var(--highlight);
+      color: #000;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .discord-button:hover {
+      background: #00ddaa;
+    }
+
+    @media (max-width: 768px) {
+      nav { flex-direction: column; align-items: center; }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Unsere Community</h1>
+    <p>Treffpunkt. Netzwerk. Bewegung.</p>
+  </header>
 
-<header>
-  <h1>Community – Alex Gaming</h1>
-</header>
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="ueber.html">Über Uns</a>
+    <a href="partner.html">Partner</a>
+    <a href="discord.html">Community</a>
+    <a href="agb.html">AGB</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="impressum.html">Impressum</a>
+  </nav>
 
-<nav>
-  <a href="index.html">Start</a>
-  <a href="ueber.html">Über Uns</a>
-  <a href="partner.html">Partner</a>
-  <a href="discord.html">Community</a>
-  <a href="agb.html">AGB</a>
-  <a href="datenschutz.html">Datenschutz</a>
-  <a href="impressum.html">Impressum</a>
-</nav>
+  <main>
+    <p>Unsere Discord-Community ist das Herzstück unseres Projekts. Austausch, Events, Feedback und Ideen – alles an einem Ort.</p>
+    <a class="discord-button" href="https://discord.gg/DEININVITELINK" target="_blank">Jetzt beitreten</a>
+  </main>
 
-<section>
-  <h2>Werde Teil unserer globalen Community</h2>
-  <p>Unser Discord-Server verbindet kreative Menschen aus der ganzen Welt – mit Themen rund um Projekte, Tools, Design und mehr.</p>
-
-  <a href="https://discord.gg/DEIN-TEMPLATE" class="discord-btn" target="_blank">Jetzt beitreten</a>
-
-  <p style="margin-top: 20px; color: #aaa;">Der Discord-Link kann bei Bedarf angepasst oder regeneriert werden.</p>
-</section>
-
-<footer>
-  &copy; 2025 Alex Gaming – Community-Plattform
-</footer>
-
+  <footer>&copy; 2025 Alex Gaming</footer>
 </body>
 </html>
