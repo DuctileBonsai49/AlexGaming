@@ -1,49 +1,103 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Über Uns – Alex Gaming</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #0f0f0f; color: #fff; }
-    header, footer { background: #1a1a1a; text-align: center; padding: 20px; }
-    nav { background: #2c2c2c; display: flex; justify-content: center; gap: 20px; padding: 15px; }
-    nav a { color: #fff; text-decoration: none; font-weight: bold; }
-    nav a:hover { color: #00ffcc; }
-    section { padding: 50px 20px; max-width: 1000px; margin: auto; }
-    h1, h2 { color: #00ffcc; }
+    :root {
+      --bg: #0f0f0f;
+      --text: #ffffff;
+      --highlight: #00ffcc;
+      --dark: #1a1a1a;
+      --nav: #2c2c2c;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); }
+
+    header, footer {
+      background: var(--dark);
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: var(--nav);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--highlight);
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.4em;
+      color: var(--highlight);
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.6em;
+      color: var(--highlight);
+      margin-top: 30px;
+    }
+
+    p {
+      color: #ccc;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      nav { flex-direction: column; align-items: center; }
+      h1 { font-size: 2em; }
+      h2 { font-size: 1.4em; }
+    }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Über Uns</h1>
+    <p>Die Idee. Das Team. Die Mission.</p>
+  </header>
 
-<header>
-  <h1>Über Alex Gaming</h1>
-</header>
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="ueber.html">Über Uns</a>
+    <a href="partner.html">Partner</a>
+    <a href="discord.html">Community</a>
+    <a href="agb.html">AGB</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="impressum.html">Impressum</a>
+  </nav>
 
-<nav>
-  <a href="index.html">Start</a>
-  <a href="ueber.html">Über Uns</a>
-  <a href="partner.html">Partner</a>
-  <a href="discord.html">Community</a>
-  <a href="agb.html">AGB</a>
-  <a href="datenschutz.html">Datenschutz</a>
-  <a href="impressum.html">Impressum</a>
-</nav>
+  <main>
+    <p>Alex Gaming ist mehr als ein Projekt – es ist eine Bewegung. Gegründet mit der Vision, Menschen weltweit durch kreative digitale Präsenz zu verbinden, entwickeln wir außergewöhnliche Projekte, Plattformen und Partnerschaften.</p>
 
-<section>
-  <h2>Unsere Vision</h2>
-  <p>Wir sind Alex Gaming – ein Unternehmen, das kreative, globale und webbasierte Ideen zusammenbringt. Unsere Plattform ist keine klassische Gaming-Seite, sondern ein Raum für Projekte, Tools und Community-Building auf höchstem Niveau.</p>
+    <h2>Werte, die uns antreiben</h2>
+    <p>Transparenz, Innovation und echte Gemeinschaft stehen bei uns an erster Stelle. Unser Ziel ist es, mehr als Inhalte zu schaffen – wir schaffen Bedeutung.</p>
 
-  <h2>Unser Team</h2>
-  <p>Unter der Leitung von CEO Alex Hürtgen entwickeln wir Ideen, Services und digitale Erlebnisse, die Menschen weltweit verbinden.</p>
+    <h2>Unsere Community</h2>
+    <p>Wir glauben an Vielfalt, Offenheit und gegenseitige Unterstützung. Deshalb ist jede Stimme in unserer Community wichtig. Werde Teil davon!</p>
+  </main>
 
-  <h2>Unsere Partner</h2>
-  <p>Gemeinsam mit <strong>Ayve Song Production</strong> schaffen wir synergetische Projekte mit einzigartigem Charakter.</p>
-</section>
-
-<footer>
-  &copy; 2025 Alex Gaming – Über uns
-</footer>
-
+  <footer>&copy; 2025 Alex Gaming</footer>
 </body>
 </html>
