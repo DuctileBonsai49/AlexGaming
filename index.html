@@ -3,49 +3,170 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alex Gaming – Start</title>
+  <title>Willkommen bei Alex Gaming</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #0f0f0f; color: #fff; }
-    header, footer { background: #1a1a1a; text-align: center; padding: 20px; }
-    nav { background: #2c2c2c; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 15px; }
-    nav a { color: #fff; text-decoration: none; font-weight: bold; }
-    nav a:hover { color: #00ffcc; }
-    main { max-width: 1000px; margin: auto; padding: 40px 20px; }
-    h1 { color: #00ffcc; }
-    section { margin-bottom: 40px; }
+    :root {
+      --bg: #0f0f0f;
+      --text: #ffffff;
+      --highlight: #00ffcc;
+      --dark: #1a1a1a;
+      --nav: #2c2c2c;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background-color: var(--dark);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.4em;
+      color: var(--highlight);
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+    nav {
+      background-color: var(--nav);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--highlight);
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      color: var(--highlight);
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #ddd;
+    }
+
+    .cta {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .cta a {
+      background-color: var(--highlight);
+      color: #000;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .cta a:hover {
+      background-color: #00ddaa;
+    }
+
+    footer {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      .cta a {
+        display: block;
+        margin-top: 15px;
+      }
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Willkommen bei Alex Gaming</h1>
-  <p>Global. Kreativ. Verbunden.</p>
-</header>
+  <header>
+    <h1>Alex Gaming</h1>
+    <p>Global. Kreativ. Verbunden. Willkommen in unserer Welt.</p>
+  </header>
 
-<nav>
-  <a href="index.html">Start</a>
-  <a href="ueber.html">Über Uns</a>
-  <a href="partner.html">Partner</a>
-  <a href="discord.html">Community</a>
-  <a href="agb.html">AGB</a>
-  <a href="datenschutz.html">Datenschutz</a>
-  <a href="impressum.html">Impressum</a>
-</nav>
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="ueber.html">Über Uns</a>
+    <a href="partner.html">Partner</a>
+    <a href="discord.html">Community</a>
+    <a href="agb.html">AGB</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="impressum.html">Impressum</a>
+  </nav>
 
-<main>
-  <section>
-    <h2>Unsere Vision</h2>
-    <p>Wir schaffen globale Plattformen, kreative Konzepte und neue Wege der digitalen Vernetzung. Ohne Grenzen. Ohne Limits.</p>
-  </section>
-  <section>
-    <h2>Was wir tun</h2>
-    <p>Alex Gaming ist mehr als nur ein Name. Wir entwickeln innovative Inhalte, stärken Communities und gestalten Markenauftritte.</p>
-  </section>
-</main>
+  <main>
+    <section>
+      <h2>Unsere Vision</h2>
+      <p>Alex Gaming steht für eine neue Art von digitaler Präsenz. Wir verbinden Menschen, Marken und Möglichkeiten auf eine kreative und authentische Weise. Unsere Plattformen und Partnerschaften ermöglichen globale Sichtbarkeit mit echter Wirkung.</p>
+    </section>
 
-<footer>
-  &copy; 2025 Alex Gaming
-</footer>
+    <section>
+      <h2>Was uns besonders macht</h2>
+      <p>Wir arbeiten nicht einfach digital – wir leben es. Von innovativen Ideen bis zu crossmedialer Umsetzung stehen wir für Qualität, Klarheit und eine starke Community. Unsere Projekte sind so vielfältig wie unsere Partner – und immer zukunftsgerichtet.</p>
+    </section>
+
+    <section>
+      <h2>Sei dabei</h2>
+      <p>Ob als Partner, Unterstützer oder Mitglied unserer Community – bei Alex Gaming ist Platz für alle, die gemeinsam etwas Großes bewegen wollen.</p>
+      <div class="cta">
+        <a href="discord.html">Jetzt unserer Community beitreten</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Alex Gaming – Alle Rechte vorbehalten
+  </footer>
 
 </body>
 </html>
